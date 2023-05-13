@@ -15,6 +15,8 @@ for(let i = 0; i < input.length; i++){
         // console.log(`Index '${j}' of vowel '${vowel}' in Inner vowel array.`);
         if(phraseLetter === vowel){
         // console.log(`Outer Array letter: '${phraseLetter}' at index ${i}, matches Inner Array vowel '${vowel}' at  index '${j}'`);
+           resultArray.push(vowel);
+           console.log(resultArray);
         }
     }
 }
