@@ -9,6 +9,12 @@ var resultArray = [];
 for(let i = 0; i < input.length; i++){
   let phraseLetter = input[i];
   // console.log(`Input letter: ${phraseLetter}, at index ${i}`);
+  if(phraseLetter === 'e'){
+    resultArray.push(input[i]);
+  }
+  if(phraseLetter === 'u'){
+    resultArray.push(input[i]);
+  }
   for(let j = 0; j < vowels.length; j++){
         let vowel = vowels[j];
         // console.log(`Letter '${phraseLetter}' at index '${i}' in Outer array/phrase.`);
@@ -21,4 +27,7 @@ for(let i = 0; i < input.length; i++){
     }
 }
 
+console.log(resultArray);
+var resultString = resultArray.join('').toUpperCase();
+console.log(resultString);
 
